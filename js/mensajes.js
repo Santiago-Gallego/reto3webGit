@@ -217,8 +217,8 @@ function traerdatos() {
                         <td>" + respuesta[i].farm.name + " - " + respuesta[i].farm.category.name +"</td>\
                         <td>" + respuesta[i].client.name + "</td>\
                         <td>\
-                             <button class=\"btn btn-outline-dark\" onclick=\"editar(" + id + ")\" disabled>Modificar</button>\
-                            <button class=\"btn btn-outline-dark\" onclick=\"eliminar(" + id + ")\" disabled>Borrar</button>\
+                             <button class=\"btn btn-outline-dark\" onclick=\"editar(" + id + ")\" >Modificar</button>\
+                            <button class=\"btn btn-outline-dark\" onclick=\"eliminar(" + id + ")\" >Borrar</button>\
                         </td>\
                         </tr>"
 

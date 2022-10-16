@@ -144,13 +144,13 @@ function guardarNuevo() {
 function guardarEditar() {
 
   //recuperar la informacion ingresada en el formulario
-  let idFarm = document.getElementById("idModif").value
+  let idModif = document.getElementById("idModif").value
   let nameModif = document.getElementById("nameModif").value
   let descriptionModif = document.getElementById("descriptionModif").value
 
   //creo un objeto javascript
   let objeto = {
-    id: idFarm,
+    id: idModif,
     name: nameModif,
     description: descriptionModif
   }
@@ -250,8 +250,8 @@ function traerdatos() {
                 respuesta[i].description +
             "</td>" +            
             '<td>\
-                <button class="btn btn-outline-dark" onclick="editar(' + id + ')" disabled>Modificar</button>\
-                <button class="btn btn-outline-dark" onclick="eliminar(' + id + ')" disabled>Borrar</button>\
+                <button class="btn btn-outline-dark" onclick="editar(' + id + ')" >Modificar</button>\
+                <button class="btn btn-outline-dark" onclick="eliminar(' + id + ')" >Borrar</button>\
             </td>\
             </tr>';
       }

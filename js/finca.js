@@ -283,10 +283,10 @@ function traerdatos() {
                         <td>\
                              <button class="btn btn-outline-dark" onclick="editar(' +
           id +
-          ')" disabled>Modificar Finca</button>\
+          ')" >Modificar Finca</button>\
                             <button class="btn btn-outline-dark" onclick="eliminar(' +
           id +
-          ')" disabled>Borrar Finca</button>\
+          ')" >Borrar Finca</button>\
                         </td>\
                         </tr>';
       }
