@@ -151,8 +151,8 @@ function guardarEditar() {
   //creo un objeto javascript
   let objeto = {
     id: idModif,
-    name: nameModif,
-    description: descriptionModif
+    description: descriptionModif,
+    name: nameModif
   }
 
   //convierto el objeto de javascript a formato json
