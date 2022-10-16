@@ -53,7 +53,7 @@ function editar(id) {
       document.getElementById("descriptionModif").value = descriptionModif
 
       //modificamos el titulo para que muestre el valor del codigo de la finca
-      document.getElementById("idLabel").innerHTML = "<strong>Id :</strong>" + idModif
+      document.getElementById("idLabel").innerHTML = "<strong>#: </strong>" + idModif
 
       nuevo.style.display = "none";
       modificar.style.display = "block";
@@ -88,9 +88,9 @@ function eliminar(id) {
 
       
       document.getElementById("idDelete").value = idList
-      document.getElementById("idList").innerHTML = "<strong>Id :</strong>" + idList
-      document.getElementById("nameList").innerHTML = "<strong>Nombre :</strong>" + nameList
-      document.getElementById("descriptionList").innerHTML = "<strong>Descripción :</strong>" + descriptionList
+      document.getElementById("idList").innerHTML = "<strong> :</strong>" + idList
+      document.getElementById("nameList").innerHTML = "<strong>Nombre: </strong>" + nameList
+      document.getElementById("descriptionList").innerHTML = "<strong>Descripción: </strong>" + descriptionList
       nuevo.style.display = "none";
       modificar.style.display = "none";
       borrar.style.display = "block";

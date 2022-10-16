@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <div id="nuevo">
-            <h2>Nueva Categoría</h2>
+            <h2 class="text-center">Nueva Categoría</h2>
             <div class="form-group">
                 <label for="name">Nombre</label>
                 <input type="text" class="form-control" id="name" placeholder="Nombre">
@@ -20,13 +20,13 @@
                 <label for="description">Descripción</label>
                 <input type="text" class="form-control" id="description" placeholder="Descripción">
             </div>
-            <br><br>
-            <button class="btn btn-primary" id="nuevoGuardar" onclick="guardarNuevo()">Guardar</button>
+            <br>
+            <button class="btn btn-dark" id="nuevoGuardar" onclick="guardarNuevo()">Guardar</button>
             <button class="btn btn btn-secondary" id="nuevoCancelar" onclick="inicial()">Cancelar</button>
         </div>
 
         <div id="modificar">
-            <h2>Datos de la Categoría</h2>
+            <h2 class="text-center">Datos de la Categoría</h2>
             <div class="form-group">
                 <label id="idLabel" for="idModif"></label>
                 <input type="hidden" class="form-control" id="idModif" placeholder="Id">
@@ -39,41 +39,40 @@
                 <label for="descriptionModif">Descripción</label>
                 <input type="text" class="form-control" id="descriptionModif" placeholder="Descripción">
             </div>
-            <br><br>
-            <button id="nuevoGuardar" class="btn btn-primary" onclick="guardarEditar()" disabled>Guardar</button>
+            <br>
+            <button id="nuevoGuardar" class="btn btn-dark" onclick="guardarEditar()" disabled>Guardar</button>
             <button id="nuevoCancelar" class="btn btn-secondary" onclick="inicial()">Cancelar</button>
         </div>
 
         <div id="borrar">
-            <h2>Desea borrar la información de la Categoría:</h2>
+            <h2 class="text-center">Desea borrar la información de la Categoría:</h2>
             <input id="idDelete" type="hidden">
             <ol class="list-group list-group-numbered">
                 <li id="idList" class="list-group-item"></li>
                 <li id="nameList" class="list-group-item"></li>
                 <li id="descriptionList" class="list-group-item"></li>
             </ol>
-            <br><br>
-            <button id="borrarGuardar" class="btn btn-primary" onclick="guardarBorrar()" disabled>Eliminar</button>
+            <br>
+            <button id="borrarGuardar" class="btn btn-dark" onclick="guardarBorrar()" disabled>Eliminar</button>
             <button id="borrarCancelar" class="btn btn-secondary" onclick="inicial()">Cancelar</button>
         </div>
 
         <div id="datos">
-            <h1>Listado de Categorías</h1>
+            <h1 class="text-center">Listado de Categorías</h1>
             <button type="button" class="btn btn-link">
                 <a href="index.html">
                     <img src="img/back.png" class="img-fluid" alt="Regresar">
                 </a>
             </button>
-            <button class="btn btn-primary" onclick="agregar()">Agregar Categoría</button>
-            <br>
-            <br>
+            <button class="btn btn-dark" onclick="agregar()">Agregar Categoría</button>
+            <br><br>
             <table border="1" class="table table-striped table-responsive-md" id="tabla">
-                <thead>
+                <thead class="table-dark">
                     <tr>
-                        <th>Id</th>
+                        <th>#</th>
                         <th>Categoría</th>
                         <th>Descripción</th>
-                        <th>Action</th>
+                        <th>Acción</th>
                     </tr>
                 </thead>
                 <tbody id="registros">

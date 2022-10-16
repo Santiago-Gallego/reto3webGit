@@ -34,7 +34,7 @@ function editar(id) {
   //1 crear un objeto XMLHttpRequest
   let peticion = new XMLHttpRequest();
   let url =
-    "https://g204ecfa60e021a-g3qlhq6a8n5r6dq0.adb.us-phoenix-1.oraclecloudapps.com/ords/admin/farm/farm";
+    "http://129.151.103.188:8082/api/Reservation";
 
   /*
   2 propiedad onreadystatechange asigna a una funcion
@@ -76,8 +76,7 @@ function editar(id) {
 function eliminar(id) {
   //1 crear un objeto XMLHttpRequest
   let peticion = new XMLHttpRequest();
-  let url =
-    "https://g204ecfa60e021a-g3qlhq6a8n5r6dq0.adb.us-phoenix-1.oraclecloudapps.com/ords/admin/farm/farm";
+  let url ="http://129.151.103.188:8082/api/Reservation";
 
   /*
   2 propiedad onreadystatechange asigna a una funcion
@@ -98,9 +97,9 @@ function eliminar(id) {
 
       
       document.getElementById("idDelete").value = idModif
-      document.getElementById("idList").innerHTML = "<strong>Farm id :</strong>" + idModif
-      document.getElementById("addressList").innerHTML = "<strong>Address :</strong>" + addressModif
-      document.getElementById("exensionList").innerHTML = "<strong>Exension :</strong>" + exensionModif
+      document.getElementById("idList").innerHTML = "<strong>Farm id:</strong>" + idModif
+      document.getElementById("addressList").innerHTML = "<strong>Dirrección :</strong>" + addressModif
+      document.getElementById("exensionList").innerHTML = "<strong>Exensión :</strong>" + exensionModif
       document.getElementById("category_idList").innerHTML = "<strong>Farm categoryId :</strong>" + categoryIdModif
       document.getElementById("nameList").innerHTML = "<strong>Farm Name :</strong>" + nameModif
 
@@ -179,7 +178,7 @@ function guardarEditar() {
   let objetoJson = JSON.stringify(objeto)
 
   let url =
-    "https://g204ecfa60e021a-g3qlhq6a8n5r6dq0.adb.us-phoenix-1.oraclecloudapps.com/ords/admin/farm/farm";
+    "http://129.151.103.188:8082/api/Reservation";
 
   //1 crear un objeto XMLHttpRequest
   let peticion = new XMLHttpRequest()
@@ -216,7 +215,7 @@ function guardarBorrar() {
   let objetoJson = JSON.stringify(objeto)
 
   let url =
-    "https://g204ecfa60e021a-g3qlhq6a8n5r6dq0.adb.us-phoenix-1.oraclecloudapps.com/ords/admin/farm/farm";
+    "http://129.151.103.188:8082/api/Reservation/delete";
 
   //1 crear un objeto XMLHttpRequest
   let peticion = new XMLHttpRequest()

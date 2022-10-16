@@ -96,9 +96,9 @@ function eliminar(id) {
       
       document.getElementById("idDelete").value = idModif
       document.getElementById("idList").innerHTML = "<strong>Id :</strong>" + idModif
-      document.getElementById("nameList").innerHTML = "<strong>Address :</strong>" + nameModif
-      document.getElementById("emailList").innerHTML = "<strong>Exension :</strong>" + emailModif
-      document.getElementById("ageList").innerHTML = "<strong>Farm categoryId :</strong>" + ageModif
+      document.getElementById("nameList").innerHTML = "<strong>Dirección: </strong>" + nameModif
+      document.getElementById("emailList").innerHTML = "<strong>Exension: </strong>" + emailModif
+      document.getElementById("ageList").innerHTML = "<strong>Edad: </strong>" + ageModif
       
 
       nuevo.style.display = "none";

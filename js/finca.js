@@ -96,17 +96,17 @@ function eliminar(id) {
 
       document.getElementById("idDelete").value = idModif;
       document.getElementById("idList").innerHTML =
-        "<strong>Id :</strong>" + idModif;
+        "<strong>Id: </strong>" + idModif;
       document.getElementById("nameList").innerHTML =
-        "<strong>Name :</strong>" + nameModif;
+        "<strong>Nombre: </strong>" + nameModif;
       document.getElementById("categoryList").innerHTML =
-        "<strong>Categoría :</strong>" + categoryIdModif;
+        "<strong>Categoría: </strong>" + categoryIdModif;
       document.getElementById("extensionList").innerHTML =
-        "<strong>Extension :</strong>" + extensionModif;
+        "<strong>Extension: </strong>" + extensionModif;
       document.getElementById("addressList").innerHTML =
-        "<strong>Dirección :</strong>" + addressModif;
+        "<strong>Dirección: </strong>" + addressModif;
       document.getElementById("descriptionList").innerHTML =
-        "<strong>Descripción :</strong>" + descriptionModif;
+        "<strong>Descripción: </strong>" + descriptionModif;
 
       nuevo.style.display = "none";
       modificar.style.display = "none";
